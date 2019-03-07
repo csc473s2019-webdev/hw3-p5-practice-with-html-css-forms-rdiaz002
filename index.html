@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
     <title>Ronny's Survey</title>
     <link href="CSS/style.css" rel="stylesheet">
 </head>
+
 <body>
     <h1> Look at that survey</h1>
-    <form id = "survey" class="survey">
-        <div class ="row"> 
-        <div class="label">
-        <label>First Name:</label>
+    <form id="survey" class="survey">
+        <div class="row">
+            <div class="label">
+                <label>First Name:</label>
+            </div>
+            <div class="input">
+                <input type="text" id=first_name placeholder="Joe">
+            </div>
         </div>
-        <div class="input">
-        <input type="text" id=first_name placeholder="Joe">
-        </div>
-        </div>
-        <div class ="row"> 
+        <div class="row">
             <div class="label">
                 <label>Last Name:</label>
             </div>
@@ -26,6 +28,85 @@
                 <input type="text" id=last_name placeholder="Doe">
             </div>
         </div>
+        <div class="row">
+            <div class="label">
+                <label for="ager">Age:</label>
+            </div>
+            <div class="input">
+                <input name="ager" type="number" max="100" min="1" id="Age" placeholder="100">
+            </div>
+        </div>
+        <div class="row">
+            <div class="label">
+                <label for="Major">Whats your Major?</label>
+            </div>
+            <div class="input">
+                <select id="dropdown" class="dropdown" name="currentpos">
+                    <option disabled="" value="">Select an option</option>
+                    <option id='Accounting'>Accounting</option>
+                    <option id='Agricultural Business'>Agricultural Business</option>
+                    <option id='Anthropology'>Anthropology</option>
+                    <option id='Art'>Art</option>
+                    <option id='Biochemistry'>Biochemistry</option>
+                    <option id='Biology'>Biology</option>
+                    <option id='Business Administration'>Business Administration</option>
+                    <option id='Chemistry'>Chemistry</option>
+                    <option id='Child, Adolescent, and Family Studies'>Child, Adolescent, and Family Studies</option>
+                    <option id='Communications'>Communications</option>
+                    <option id='Computer Engineering'>Computer Engineering</option>
+                    <option id='Computer Science'>Computer Science</option>
+                    <option id='Criminal Justice'>Criminal Justice</option>
+                    <option id='Economics'>Economics</option>
+                    <option id='Electrical Engineering'>Electrical Engineering</option>
+                    <option id='English'>English</option>
+                    <option id='Engineering Sciences'>Engineering Sciences</option>
+                    <option id='Environmental Resource Management'>Environmental Resource Management</option>
+                    <option id='Finance'>Finance</option>
+                    <option id='Geology'>Geology</option>
+                    <option id='History'>History</option>
+                    <option id='Human Biological Sciences'>Human Biological Sciences</option>
+                    <option id='Human Resource Management'>Human Resource Management</option>
+                    <option id='Interdisciplinary Studies'>Interdisciplinary Studies</option>
+                    <option id='Kinesiology'>Kinesiology</option>
+                    <option id='Liberal Studies'>Liberal Studies</option>
+                    <option id='Management'>Management</option>
+                    <option id='Marketing'>Marketing</option>
+                    <option id='Mathematics'>Mathematics</option>
+                    <option id='Music'>Music</option>
+                    <option id='Natural Science'>Natural Science</option>
+                    <option id='Nursing'>Nursing</option>
+                    <option id='Philosophy'>Philosophy</option>
+                    <option id='Physics'>Physics</option>
+                    <option id='Political Science'>Political Science</option>
+                    <option id='Pre-Engineering'>Pre-Engineering</option>
+                    <option id='Pre-Med'>Pre-Med</option>
+                    <option id='Psychology'>Psychology</option>
+                    <option id='Public Policy and Administration'>Public Policy and Administration</option>
+                    <option id='Religious Studies'>Religious Studies</option>
+                    <option id='Small Business Management'>Small Business Management</option>
+                    <option id='Sociology'>Sociology</option>
+                    <option id='Spanish'>Spanish</option>
+                    <option id='Supply Chain Logistics'>Supply Chain Logistics</option>
+                    <option id='Theatre'>Theatre</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="labels">
+                <label for="radio-list">Favorite Color</label>
+            </div>
+            <div class ="input">
+                <ul style="list-style: none;">
+                <li class ="radio">
+                    <label>
+                        Green
+                        <input class="radio-list" name="radiobutt" value="1" type="radio">
+                    </label>
+                </li>
+                </ul>
+            </div>
+        </div>
     </form>
 </body>
+
 </html>
