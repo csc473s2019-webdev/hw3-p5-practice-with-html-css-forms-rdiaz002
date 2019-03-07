@@ -13,32 +13,32 @@
     <h1> Look at that survey</h1>
     <form id="survey" class="survey">
         <div class="row">
-            <div class="label">
-                <label>First Name:</label>
+            <div class="labels">
+                <label for="name" id="name-label">First Name:</label>
             </div>
             <div class="input">
-                <input type="text" id=first_name placeholder="Joe">
+                <input type="text" id=first_name name="name" placeholder="Joe">
             </div>
         </div>
         <div class="row">
-            <div class="label">
-                <label>Last Name:</label>
+            <div class="labels">
+                <label for="last_name" id="last-label">Last Name:</label>
             </div>
             <div class="input">
-                <input type="text" id=last_name placeholder="Doe">
+                <input type="text" id="last_name" placeholder="Doe">
             </div>
         </div>
         <div class="row">
-            <div class="label">
-                <label for="ager">Age:</label>
+            <div class="labels">
+                <label for="ager" id="number-label">Age:</label>
             </div>
             <div class="input">
-                <input name="ager" type="number" max="100" min="1" id="Age" placeholder="100">
+                <input id="ager" type="number" max="100" min="1" id="Age" placeholder="100">
             </div>
         </div>
         <div class="row">
-            <div class="label">
-                <label for="Major">Whats your Major?</label>
+            <div class="labels">
+                <label for="Major" id="Major-label">Whats your Major?</label>
             </div>
             <div class="input">
                 <select id="dropdown" class="dropdown" name="currentpos">
@@ -93,17 +93,50 @@
         </div>
         <div class="row">
             <div class="labels">
-                <label for="radio-list">Favorite Color</label>
+                <label for="userRating" id="color-label">Favorite Color</label>
             </div>
-            <div class ="input">
-                <ul style="list-style: none;">
-                <li class ="radio">
-                    <label>
-                        Green
-                        <input class="radio-list" name="radiobutt" value="1" type="radio">
-                    </label>
-                </li>
+            <div class="input">
+                <ul style="list-style:none;">
+                    <li class ="radio">
+                        <label>
+                            Green
+                            <input class="userRatings" name="radio-buttons" value="1" type="radio">
+                        </label>
+                    </li>
+                    <li class ="radio">
+                        <label>
+                            Orange
+                            <input class="userRatings" name="radio-buttons" value="1" type="radio">
+                        </label>
+                    </li>
+                    <li class ="radio">
+                        <label>
+                            Yellow
+                            <input class="userRatings" name="radio-buttons" value="1" type="radio">
+                        </label>
+                    </li>
+                    <li class ="radio">
+                        <label>
+                            Red
+                            <input class="userRatings" name="radio-buttons" value="1" type="radio">
+                        </label>
+                    </li>
+                    <li class ="radio">
+                        <label>
+                            Blue
+                            <input class="userRatings" name="radio-buttons" value="1" type="radio">
+                        </label>
+                    </li>
+                    <li class ="radio">
+                        <label>
+                            Purple
+                            <input class="userRatings" name="radio-buttons" value="1" type="radio">
+                        </label>
+                    </li>
                 </ul>
+            </div>
+            <div class="row">
+
             </div>
         </div>
     </form>

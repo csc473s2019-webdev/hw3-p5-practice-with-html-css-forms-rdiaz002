@@ -12,13 +12,15 @@ body{
     border-width: 1em;
     border-radius: 4em;
 }
-.label{
-    display:inline-block;
-    text-align:right;
-    width:40%;
-    padding:0.5em;
+.labels {
+
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
     vertical-align: top;
-    margin-top: 0.5em;
+    margin-top: 10px;
+
 }
 .input{
     display:inline-block;
@@ -26,4 +28,23 @@ body{
     width:48%;
     vertical-align: middle;
     margin-top: 0.5em;
+}
+.userratings{
+    float : left;
+    margin-right: 1em;
+}
+.radio, .checkbox {
+
+    position: relative;
+    left: -43px;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+
+}
+.userRatings, input[type="checkbox"] {
+
+    float: left;
+    margin-right: 5px;
+
 }
